@@ -1,0 +1,95 @@
+{
+  "name": "duplicate-id-checker",
+  "version": "1.0.0",
+  "description": "Finds duplicate HTML id attributes in your DOM — with framework integrations for React, Vue, Svelte, and Angular.",
+  "keywords": [
+    "duplicate-id",
+    "html",
+    "dom",
+    "accessibility",
+    "a11y",
+    "lint",
+    "validation",
+    "react",
+    "vue",
+    "svelte",
+    "angular",
+    "devtools"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaredtheengineer1/duplicate_id_checker.git"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "license": "MIT",
+  "author": "Jared Clayborn",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/core.js",
+      "require": "./dist/core.cjs"
+    },
+    "./react": {
+      "import": "./dist/react.js",
+      "require": "./dist/react.cjs"
+    },
+    "./vue": {
+      "import": "./dist/vue.js",
+      "require": "./dist/vue.cjs"
+    },
+    "./svelte": {
+      "import": "./dist/svelte.js",
+      "require": "./dist/svelte.cjs"
+    },
+    "./angular": {
+      "import": "./dist/angular.js",
+      "require": "./dist/angular.cjs"
+    }
+  },
+  "peerDependencies": {
+    "@angular/common": ">=20.0.0",
+    "@angular/core": ">=20.0.0",
+    "react": ">=16.8.0",
+    "svelte": ">=3.0.0",
+    "vue": ">=2.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "vue": {
+      "optional": true
+    },
+    "svelte": {
+      "optional": true
+    },
+    "@angular/core": {
+      "optional": true
+    },
+    "@angular/common": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@angular/common": "^22.0.3",
+    "@angular/core": "^22.0.3",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/react": "^19.2.17",
+    "@vitest/coverage-v8": "^4.1.9",
+    "jsdom": "^29.1.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "svelte": "^5.56.4",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.9",
+    "vue": "^3.5.39"
+  }
+}
