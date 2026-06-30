@@ -5,7 +5,7 @@ Finds duplicate HTML `id` attributes in your DOM. Duplicate IDs break accessibil
 ## Installation
 
 ```bash
-npm install duplicate_id_checker
+npm install duplicate-id-checker
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install duplicate_id_checker
 ### Vanilla JS
 
 ```js
-import { findDuplicateIds } from 'duplicate_id_checker';
+import { findDuplicateIds } from 'duplicate-id-checker';
 
 const duplicates = findDuplicateIds();
 
@@ -43,7 +43,7 @@ Each result in the returned array has the shape:
 ### React
 
 ```tsx
-import { useDuplicateIds } from 'duplicate_id_checker/react';
+import { useDuplicateIds } from 'duplicate-id-checker/react';
 
 function App() {
   const duplicates = useDuplicateIds();
@@ -78,7 +78,7 @@ const duplicates = useDuplicateIds({
 ```vue
 <script setup>
 import { useTemplateRef } from 'vue';
-import { useDuplicateIds } from 'duplicate_id_checker/vue';
+import { useDuplicateIds } from 'duplicate-id-checker/vue';
 
 const root = useTemplateRef('root');
 const { duplicates } = useDuplicateIds(root);
@@ -95,7 +95,7 @@ const { duplicates } = useDuplicateIds(root);
 
 ```svelte
 <script>
-  import { duplicateIds } from 'duplicate_id_checker/svelte';
+  import { duplicateIds } from 'duplicate-id-checker/svelte';
 
   function onDuplicate(dupes) {
     console.warn('Duplicate IDs:', dupes);
@@ -117,7 +117,7 @@ Two options are available: a **service** for programmatic use, and a **directive
 
 ```ts
 import { Component, inject } from '@angular/core';
-import { DuplicateIdChecker } from 'duplicate_id_checker/angular';
+import { DuplicateIdChecker } from 'duplicate-id-checker/angular';
 
 @Component({ ... })
 export class AppComponent {
@@ -133,7 +133,7 @@ export class AppComponent {
 **Directive**
 
 ```ts
-import { DuplicateIdCheckDirective } from 'duplicate_id_checker/angular';
+import { DuplicateIdCheckDirective } from 'duplicate-id-checker/angular';
 
 @Component({
   standalone: true,
