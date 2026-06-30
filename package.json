@@ -1,6 +1,6 @@
 {
   "name": "duplicate-id-checker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Finds duplicate HTML id attributes in your DOM — with framework integrations for React, Vue, Svelte, and Angular.",
   "keywords": [
     "duplicate-id",
